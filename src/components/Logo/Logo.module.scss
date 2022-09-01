@@ -1,0 +1,9 @@
+.logo{
+  display: inline-flex;
+  position: relative;
+  z-index: 2;
+
+  img {
+    max-width: 100px;
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+  background: #141414;
+  padding: 56px 0px;
+  color: #fff;
+  margin-top: 52px;
+
+
+  // .footer__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .footer__logo
+  &__logo {
+
+  }
+
+  // .footer__section
+  &__section {
+    display: flex;
+
+    ul {
+      display: flex;
+
+      li {
+        margin: 0px 12px;
+
+        a {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+
+  }
+
+  // .footer__dev
+  &__dev {
+
+  }
+
+  // .footer__item
+  &__item {
+
+    a{   transition: 0.3s;
+      &:hover{
+        color: #868686;
+      }
+    }
+  }
+}
