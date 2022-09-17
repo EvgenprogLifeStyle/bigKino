@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <header className={s.header}>
-            <div className={s.header__container}>
+            <div className={`${s.header__container} container mx-auto`}>
                 <div
                     className={`${s.burger} ${openBurger && s.active}`}>
                     <button
@@ -23,7 +23,7 @@ const Header = () => {
                     </button>
                    <Logo/>
                     <div className={s.burger__body}>
-                        <ListBurger setClick={setOpenBurger}/>
+                        <ListBurger setClick={setOpenBurger} burger="true"/>
                     </div>
                 </div>
             </div>

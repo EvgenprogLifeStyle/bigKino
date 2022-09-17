@@ -1,22 +1,14 @@
 import React from 'react';
-import s from './Footer.module.scss'
 import Logo from "../Logo/Logo";
 import ListBurger from "../ListBurger/ListBurger";
 
 const Footer = () => {
     return (
-        <footer className={s.footer}>
-            <div className={`${s.footer__container} container`}>
+        <footer className="py-[52px] text-white bg-neutral-900 mt-10">
+            <div className="container mx-auto flex justify-between">
                 <Logo/>
-                <div className={s.footer__section}>
-                    <ListBurger/>
-                </div>
-                <div className={s.footer__dev}>
-                    <div className={s.footer__item}>
-                        <div>Разработал <a href="evgen-prog.ru">Evgen</a></div>
-
-                    </div>
-                </div>
+                <ListBurger/>
+                <div>Разработал <a href="evgen-prog.ru" className=" hover:text-slate-300 ">Evgen</a></div>
             </div>
         </footer>
     );

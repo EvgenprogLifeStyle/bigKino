@@ -2,7 +2,7 @@
 @import "color";
 
 $mainColor: $gray1;
-$fontFamily: 'Roboto Condensed', sans-serif;
+$fontFamily: 'Roboto Condensed' ;
 $fontSize: 16px;
 
 @import "null";
@@ -12,12 +12,13 @@ body{
   color: $mainColor;
   font-family: $fontFamily;
   font-size: $fontSize;
+  line-height: calc(24 / 16);
 }
-.container {
-  max-width: 1360px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-
-
-}
+//.container {
+//  max-width: 1360px;
+//  margin: 0 auto;
+//  padding-left: 40px;
+//  padding-right: 40px;
+//
+//
+//}

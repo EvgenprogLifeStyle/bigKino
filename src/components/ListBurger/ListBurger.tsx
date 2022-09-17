@@ -1,13 +1,19 @@
 import React, {FC} from 'react';
 import {NavLink} from "react-router-dom";
-import s from './ListBurger.module.scss'
-const ListBurger: FC<any> = ({setClick}) => <>
-    <ul className={s.burger__list}>
-        <li><NavLink onClick={() => setClick(false)} to="/">Главная </NavLink></li>
-        <li><NavLink onClick={() => setClick(false)} to="/">Фильмы </NavLink></li>
-        <li><NavLink onClick={() => setClick(false)} to="/">Сериалы </NavLink></li>
-        <li><NavLink onClick={() => setClick(false)} to="/">Мультфильмы </NavLink></li>
-        <li><NavLink onClick={() => setClick(false)} to="/favorites">Избранное </NavLink></li>
+
+const links = [
+    {to: '/', name: 'Главная'},
+    {to: '/', name: 'Фильмы'},
+    {to: '/', name: 'Сериалы'},
+    {to: '/',name: 'Мультфильмы'},
+    {to: '/favorites',name: 'Избранное'}
+]
+
+const ListBurger: FC<any> = ({setClick, burger}) => <>
+    <ul className={`flex  ${burger && 'flex-col'}`}>
+        {links.map((e, idx) =>
+            <li key={idx} className="mx-[12px] text-lg font-medium hover:text-slate-300 ">
+                <NavLink onClick={() => setClick(false)} to={e.to}>{e.name} </NavLink></li>)}
     </ul>
 </>
 
