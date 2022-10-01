@@ -53,5 +53,41 @@ export interface IFilm {
     lastSync: Date;
 }
 
+export interface IFilms<T> {
+    total: number;
+    items: T;
+}
 
 
+export interface IFact {
+    text: string;
+    type: string;
+    spoiler: boolean;
+}
+
+export interface IFacts<T> {
+    total: number;
+    items: T;
+}
+
+export interface IVideo {
+    url: string;
+    name: string;
+    site: string;
+}
+
+export interface IVideos<T> {
+    total: number;
+    items: T;
+}
+
+export interface IImg {
+    imageUrl: string;
+    previewUrl: string;
+}
+
+export interface IImages<T> {
+    total: number;
+    totalPages: number;
+    items: T;
+}

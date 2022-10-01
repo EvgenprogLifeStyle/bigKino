@@ -1,7 +1,5 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Teaser from "./Teaser/Teaser";
-import ListCard from "../../components/ListCard/ListCard";
-import {useGetFilmQuery} from "../../store/FilmsApi";
 
 const Home = () => {
 
